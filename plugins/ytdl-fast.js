@@ -46,8 +46,8 @@ _Répondez à ce message avec 1 ou 2 pour télécharger._`;
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363354023106228@newsletter',
-                newsletterName: 'KHAN-MD',
+                newsletterJid: '',
+                newsletterName: 'Dracula',
                 serverMessageId: 143
             }
         };
