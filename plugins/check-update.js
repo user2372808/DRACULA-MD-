@@ -27,7 +27,7 @@ cmd({
     }
 
     // Récupérer la dernière version depuis GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/DRACULA-MD/DRACULA-MD/main/data/version.json';
+    const rawVersionUrl = 'https://raw.githubusercontent.com/PHAROUK56/DRACULA-MD-/main/data/version.json';
     let latestVersion = 'Inconnue';
     let latestChangelog = 'Aucun changelog disponible.';
     try {
@@ -53,7 +53,7 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // Statistiques GitHub
-    const githubRepo = 'https://github.com/DRACULA-MD/DRACULA-MD.git';
+    const githubRepo = 'https://github.com/PHAROUK56/DRACULA-MD-.git';
 
     // Vérifier l'état de mise à jour
     let updateMessage = `✅ TON BOT DRACULA-MD EST BIEN À JOUR ☺️!`;
@@ -69,7 +69,7 @@ UTILISE *.update* pour le mettre à jour.`;
       `📌 *Nom du Bot:* DRACULA-MD\n🔖 *Version actuelle :* ${localVersion}\n📢 *Dernière version :* ${latestVersion}\n📂 *Total Plugins :* ${pluginCount}\n🔢 *Total Commandes :* ${totalCommands}\n\n` +
       `💾 *Infos Système :*\n⏳ *Uptime :* ${uptime}\n📟 *RAM :* ${ramUsage}MB / ${totalRam}MB\n⚙️ *Nom de l’Hôte :* ${hostName}\n📅 *Dernière mise à jour :* ${lastUpdate}\n\n` +
       `📝 *Changelog :*\n${latestChangelog}\n\n` +
-      `⭐ *Dépôt GitHub :* ${githubRepo}\n👤 *PROPRIO :* [Pharouk](https://github.com/DRACULA-MD/DRACULA-MD.git)\n\n${updateMessage}\n\n🚀 *N'oublie pas de donner une 🌟 au repo!*`;
+      `⭐ *Dépôt GitHub :* ${githubRepo}\n👤 *PROPRIO :Pharouk \n\n (https://github.com/PHAROUK56/DRACULA-MD-.git)\n\n${updateMessage}\n\n🚀 *N'oublie pas de donner une 🌟 au repo!*`;
 
     // Envoyer le message avec une image
     await conn.sendMessage(from, {
