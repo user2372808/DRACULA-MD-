@@ -236,7 +236,7 @@ cmd({
 ┃ 📅 *Mis à jour :* ${app.updated}
 ┃ 👨‍💻 *Développeur :* ${app.developer.name}
 ╰━━━━━━━━━━━━━━━┈⊷
-🔗 *Propulsé par KhanX-AI*`;
+🔗 *Propulsé par Pharouk*`;
 
     await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
