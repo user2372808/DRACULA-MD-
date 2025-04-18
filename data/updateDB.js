@@ -33,16 +33,14 @@ async function initializeUpdateDB() {
 }
 
 async function setCommitHash(hash) {
-    await initializeUpdateDB();
-    const record = await UpdateDB.findByPk(1);
+    const record = await initializeUpdateDB();
     record.commitHash = hash;
     await record.save();
 }
 
 async function getCommitHash() {
-    await initializeUpdateDB();
-    const record = await UpdateDB.findByPk(1);
-    return record ? record.commitHash : 'unknown';
+    const record = await initializeUpdateDB();
+    return record?.commitHash || 'unknown';
 }
 
 module.exports = {
